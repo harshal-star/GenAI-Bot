@@ -19,7 +19,7 @@ user_api_key = st.sidebar.text_input(
 
 os.environ["OPENAI_API_KEY"] = user_api_key
 
-data_path = "C:data/"
+data_path = "data/"
 
 files = os.listdir(data_path)
 
