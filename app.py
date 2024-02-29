@@ -12,7 +12,12 @@ import streamlit as st
 
 st.set_page_config(layout = "wide")
 
-os.environ['OPENAI_API_KEY'] = "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" 
+user_api_key = st.sidebar.text_input(
+    label="#### Your OpenAI API key 👇",
+    placeholder="Paste your openAI API key, sk-",
+    type="password")
+
+os.environ["OPENAI_API_KEY"] = user_api_key
 
 data_path = "C:data/"
 
